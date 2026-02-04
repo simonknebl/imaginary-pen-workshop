@@ -1,0 +1,46 @@
+% DIE *BASE* DATEI BEINHALTET ALLE TECHNISCHEN
+% INFORMATIONEN UND REGELN DER SCHRIFT.
+
+%  /|    
+%   | o 
+
+% ALLGEMEINE (TECHNISCHE) INFORMATIONEN
+font_coding_scheme "T1";
+font_slant slant;
+font_x_height xht#;
+font_extra_space 2u#;
+font_quad:=10u#+0s#;
+font_normal_space:=3u#+0s#;
+font_normal_stretch:=0u#;
+font_normal_shrink:=0u#;
+
+% ZUSÄTZLICHE (VERSTECKTE) PARAMETER 
+py#:=p#*cont;           % KONTRAST
+
+% MASSEINHEITEN, PIXEL-BERECHNUNG
+define_pixels(s,u,xgap,asc, desc, xht);
+define_blacker_pixels(p,py);
+define_corrected_pixels(o);
+
+% SLANT
+if unknown slant: slant:=0 else: currenttransform:=
+ identity slanted slant yscaled aspect_ratio 
+fi;
+
+%  __    
+%   _)   
+%  /__ o 
+
+% STIFTE
+% HIER KÖNNEN DIE STIFTE BESCHRIEBEN UND GESPEICHERT WERDEN
+pickup pencircle xscaled p yscaled py rotated rotation;
+imaginarypen:=savepen;
+
+% sidebearings %
+def adjustwidth(expr left_adjustment,right_adjustment) = 
+ l:=-hround(left_adjustment*hppp);
+ interim xoffset:=-l; 
+ charwd:=charwd+left_adjustment+right_adjustment; 
+ r:=l+hround(charwd*hppp);
+ w:=r-hround(right_adjustment*hppp); 
+enddef;

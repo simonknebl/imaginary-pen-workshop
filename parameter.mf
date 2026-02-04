@@ -1,0 +1,34 @@
+% DIE PARAMETER-DATEI LEGT ALLE VARIABLEN WERTE
+% DER SCHRIFT FEST. HIER KÖNNEN WERTE DER GANZEN
+% SCHRIFT ANGEPASST WERDEN.
+
+% DIE ZEICHEN # STEHEN FÜR *SHARP* ODER *ECHTE* MASSEINHEITEN,
+% DIE UNABHÄNGIG DAVON SIND, OB WIR EINE SCHRIFTART MIT HOHER ODER
+% NIEDRIGER AUFLÖSUNG ERSTELLEN.
+
+% METRIKEN
+u#:=0.15pt#;            % SCHRIFT-WEITE
+ht#:=10pt#;             % OBERLÄNGE, BOX GRÖSSE DER GLYPHEN
+xht#:=6.5pt#;          % X-HÖHE
+asc#:=0.95ht#;          % OBERLÄNGE
+desc#:=0.95ht#;         % UNTERLÄNGE
+o#:=0.1pt#;             % ÜBERHANG, OPTISCHER AUSGLEICH
+s#:=0u#;                % ZUSÄTZLICHES SPACING
+xgap#:=1pt#;
+
+% STIFT
+p#:=1.0pt#;             % STIFT-GRÖSSE
+cont:=0.95;              % STIFT-KONTRAST
+rotation:=0;            % STIFT-WINKEL
+
+% ITALIC
+boolean italic;         % BOOLEAN VARIABLEN SIND ENTWEDER *TRUE* ODER *FALSE*
+italic:=false;          % ITALIC AKTIV
+slant:=0;               % KURSIVER WINKEL
+if italic:
+slant:=0.3;
+fi;
+
+% MONOSPACE
+boolean monospace;      % BOOLEAN VARIABLEN SIND ENTWEDER *TRUE* ODER *FALSE*      
+monospace:=false;       % SOLLEN ALLE GLYPHEN DIE GLEICHE BREITE HABEN?

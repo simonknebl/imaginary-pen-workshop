@@ -1,0 +1,51 @@
+% HIER WERDEN ALLE MINUSKEL-GLYPHEN GRUPPIERT
+
+% *BEGINCHAR* BESCHREIBT DIE PROPORTIONEN DER GLYPHE
+% (BREITE, HÖHE, UNTERLÄNGE)
+beginchar("a", 35u#, xht#, 0);
+% STIFTAUSWAHL
+pickup pencircle xscaled 0.8pt yscaled 0.8pt rotated 0;
+% PUNKTE
+x1 = x3 = 0.5w;
+bot y1 = 0-o;
+top y3 = h+o;
+z2 = (0,0.5h);
+z4 = (w,0.5h);
+
+top z5=(w,h);
+bot z6=(w,0);
+
+% ZEICHNEN
+draw z1..z2..z3..z4..cycle;
+draw z5..z6;
+
+% DARSTELLUNG DER PUNKTE
+penlabels(range 1 thru 150);
+% SPACING
+adjustwidth(xgap#,xgap#);
+endchar;
+
+
+
+beginchar("b", 35u#, ht#, 0);
+% STIFTAUSWAHL
+pickup pensquare xscaled 1pt yscaled 0.2pt rotated 50;
+% PUNKTE
+x1 = x3 = 0.5w;
+bot y1 = 0-o;
+top y3 = xht+o;
+z2 = (0,0.5xht);
+z4 = (w,0.5xht);
+
+top z5=(0,h);
+bot z6=(0,0);
+
+% ZEICHNEN
+draw z1..z2..z3..z4..cycle;
+draw z5..z6;
+
+% DARSTELLUNG DER PUNKTE
+penlabels(range 1 thru 150);
+% SPACING
+adjustwidth(xgap#,xgap#);
+endchar;

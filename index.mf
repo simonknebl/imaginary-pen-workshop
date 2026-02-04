@@ -1,0 +1,44 @@
+%           _                    _       
+%  o __  _ (_| o __  _  __ \/   |_) _ __ 
+%  | |||(_|__| | | |(_| |  /    |  (/_| |
+%
+
+%  /|    
+%   | o 
+
+% METAFONT VORLAGE FÜR WORKSHOP *IMAGINARY PEN*
+% 
+% ALLE FOLGENDEN INFORMATIONEN DIENEN ALS
+% REFERENZ UND KÖNNEN FREI VERÄNDERT WERDEN.
+% WEITERE INFORMATION: METAFONT.SIMONKNEBL.DE
+
+%  __    
+%   _)   
+%  /__ o 
+       
+% DAS IST DIE VERZEICHNIS-DATEI UND DIENT ALS
+% REFERENZPUNKT FÜR ALLE INFORMATIONEN DER METAFONT
+
+% FONT NAME UND GRÖSSE
+font_identifier:="imaginarypen"; font_size 10pt#;
+
+%  __    
+%  __)   
+%  __) o 
+
+% ALLE INFORMATION DER METAFONT KÖNNEN IN EINZELNE
+% FONT-DATEIEN GRUPPIERT WERDEN. HIER FOLGEN ALLE
+% VERLINKUNGEN ZU DEN JEWEILIGEN DATEIEN.
+
+% PARAMETER
+input parameter;
+
+% GRUNDLEGENDE BESCHREIBUNGEN & FUNKTIONEN
+input basis;
+
+% GLYPHEN
+input glyphen/lowercase;
+input glyphen/uppercase;
+input glyphen/numerals;
+
+bye;

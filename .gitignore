@@ -1,0 +1,11 @@
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+
+### METAFONT ###
+
+*.log
+*.dvi
+*.pdf
+.mf-project
