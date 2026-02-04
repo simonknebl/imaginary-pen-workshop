@@ -12,6 +12,7 @@ HILFREICHE WERKZEUGE:
 - Erstellung eines Proof PDFs
 
 ```
+mktextfm gray;
 mf-nowin --interaction=nonstopmode index;
 gftodvi index.2602gf;
 dvipdfmx -p a4 index.dvi; 
